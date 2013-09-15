@@ -1,0 +1,26 @@
+---
+abstract: 'Generate function to test a function'
+author:
+  - 'Steven Haryanto <stevenharyanto@gmail.com>'
+build_requires:
+  Capture::Tiny: 0
+  Test::More: 0.88
+  blib: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.132140'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Gen-Test-Rinci-FuncResult
+requires:
+  Data::Dump::OneLine: 0
+  Rinci: v1.1.37
+  Test::More: 0.98
+  perl: 5.010001
+resources:
+  homepage: http://metacpan.org/release/Gen-Test-Rinci-FuncResult/
+  repository: http://github.com/sharyanto/perl-Gen-Test-Rinci-FuncResult
+version: 0.01
