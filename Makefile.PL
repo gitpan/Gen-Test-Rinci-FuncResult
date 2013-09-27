@@ -21,15 +21,17 @@ my %WriteMakefileArgs = (
   "NAME" => "Gen::Test::Rinci::FuncResult",
   "PREREQ_PM" => {
     "Data::Dump::OneLine" => 0,
-    "Rinci" => "v1.1.37",
-    "Test::More" => "0.98"
+    "Rinci" => "v1.1.37"
   },
   "TEST_REQUIRES" => {
     "Capture::Tiny" => 0,
-    "Test::More" => "0.88",
-    "blib" => 0
+    "File::Slurp" => 0,
+    "File::Spec" => 0,
+    "IO::Handle" => 0,
+    "IPC::Open3" => 0,
+    "Test::More" => "0.98"
   },
-  "VERSION" => "0.01",
+  "VERSION" => "0.02",
   "test" => {
     "TESTS" => "t/*.t"
   }

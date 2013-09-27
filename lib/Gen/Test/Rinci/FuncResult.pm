@@ -14,6 +14,8 @@ require Exporter;
 our @ISA = qw(Exporter);
 our @EXPORT_OK = qw(gen_test_func);
 
+our $VERSION = '0.02'; # VERSION
+
 our %SPEC;
 
 $SPEC{gen_test_func} = {
@@ -142,7 +144,7 @@ sub gen_test_func {
             my $dies = $tfargs{dies} // 0;
             if (!$dies) {
                 ok(!$eval_err, "func doesn't die")
-                    or do { diag "func died: '$dies'"; $suc = 0; goto DONE };
+                    or do { diag "func died: '$eval_err'"; $suc=0; goto DONE };
             } else {
                 ok($eval_err, "func dies") or $suc = 0;
                 goto DONE;
@@ -206,7 +208,7 @@ Gen::Test::Rinci::FuncResult - Generate function to test a function
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 

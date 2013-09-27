@@ -2,7 +2,7 @@ NAME
     Gen::Test::Rinci::FuncResult - Generate function to test a function
 
 VERSION
-    version 0.01
+    version 0.02
 
 SYNOPSIS
      use Gen::Test::Rinci::FuncResult qw(gen_test_func);
