@@ -6,6 +6,7 @@ META.json
 META.yml
 Makefile.PL
 README
+build.log
 dist.ini
 lib/Gen/Test/Rinci/FuncResult.pm
 t/00-compile.t
